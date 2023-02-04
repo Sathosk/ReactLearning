@@ -1,11 +1,14 @@
 import { Post } from './Post'
 import { Header } from './components/Header'
-import './styles.css';
+import './global.css';
 
 function App() {
-  return (
-    <Header />
-  )
+    return (
+        <div>
+            <Header />
+            <Post author="Joao" content="testetestesteste" />
+        </div>
+    )
 }
 
 export default App 
