@@ -1,25 +1,26 @@
 import { ThumbsUp, Trash } from 'phosphor-react'
+import { Avatar } from './Avatar'
 import styles from './Comment.module.css'
 
-export function Comment() {
+export function Comment(props) {
     return (
         <div className={ styles.comment }>
-            <img src="https://avatars.githubusercontent.com/u/63148481?v=4"/>
+            <Avatar hasBorder={false} src={ props.src }/>
 
             <div className={ styles.commentBox }>
                 <div className={ styles.commentContent }>
                     <header>
                         <div className={ styles.authorAndTime }>
-                            <strong>Tiago Cruz</strong>
+                            <strong>Alexandre</strong>
                             <time title='11 de maio ás 08:13h' dateTime='2022-05-11 08:13:30'>Cerca de 1h atrás</time>
                         </div>
 
                         <button title='Deletar comentário'>
-                            <Trash size={20} />
+                            <Trash size={24} />
                         </button>
                     </header>
 
-                    <p>Muito bom Devon, parabéns!!</p>
+                    <p>Muito bom Tiago, parabéns, voce é foda, quero ser igual você quando crescer!! Sou seu fã</p>
                 </div>
 
                 <footer>
