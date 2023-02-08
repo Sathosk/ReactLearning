@@ -20,7 +20,7 @@ export function Comment(props) {
                         </button>
                     </header>
 
-                    <p>Muito bom Tiago, parabéns, voce é foda, quero ser igual você quando crescer!! Sou seu fã</p>
+                    <p>{props.content}</p>
                 </div>
 
                 <footer>
